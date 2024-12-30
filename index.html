@@ -228,9 +228,11 @@
         // Send email
         emailjs.send(serviceID, templateID, templateParams)
           .then(() => {
-            status.textContent = "Email sent successfully!";
-            status.style.color = "green";
+            alert("Admission Confirmed successfully!"")
+            // status.textContent = "Email sent successfully!";
+            // status.style.color = "green";
             document.getElementById("contact-form").reset();
+            hide()
           })
           .catch((error) => {
             status.textContent = "Failed to send email. Please try again.";
