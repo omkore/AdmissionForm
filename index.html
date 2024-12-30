@@ -176,7 +176,7 @@
             </div>
           </div>
           <div class="bg-gray-50 px-4 py-3 sm:flex sm:flex-row-reverse sm:px-6">
-            <button type="submit" class="inline-flex w-full justify-center rounded-md bg-green-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-green-400 sm:ml-3 sm:w-auto">Confirm Admission</button>
+            <button onclick="btn-send()"  class="inline-flex w-full justify-center rounded-md bg-green-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-green-400 sm:ml-3 sm:w-auto">Confirm Admission</button>
             <button onclick="hide()" class="mt-3 inline-flex w-full justify-center rounded-md bg-red-600 px-3 py-2 text-sm font-semibold text-white-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-red-300 sm:mt-0 sm:w-auto">Cancel</button>
           </div>
         </div>
@@ -194,7 +194,7 @@
       emailjs.init("KF8Rs18R4pn-S7QRv"); // Replace with your Email.js User ID
     })();
 
-    document.getElementById("contact-form").addEventListener("submit", function (event) {
+    document.getElementById("btn-send").addEventListener("click", function (event) {
       event.preventDefault();
       const status = document.getElementById("status");
       console.log(document.getElementsByName("fname").value!="" , document.getElementsByName("lname").value!="",document.getElementsByName("email").value!="",document.getElementsByName("phone").value!="",document.getElementsByName("course").value!="");
