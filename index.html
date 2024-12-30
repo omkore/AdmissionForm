@@ -197,16 +197,15 @@
 
     function sendMSG(){
     
-      const status = document.getElementById("status");
-      console.log(document.getElementsByName("fname").value!="" , document.getElementsByName("lname").value!="",document.getElementsByName("email").value!="",document.getElementsByName("phone").value!="",document.getElementsByName("course").value!="");
-      
-      if(document.getElementsByName("fname")[0].value === "" || 
-  document.getElementsByName("lname")[0].value === "" || 
-  document.getElementsByName("email")[0].value === "" || 
-  document.getElementsByName("phone")[0].value === "" || 
-  document.getElementsByName("course")[0].value === ""){
-      alert("Please Fill All Details First !")
-      }else{
+    const status = document.getElementById("status");
+    console.log(document.getElementsByName("fname").value!="" , document.getElementsByName("lname").value!="",document.getElementsByName("email").value!="",document.getElementsByName("phone").value!="",document.getElementsByName("course").value!="");
+    if(document.getElementsByName("fname")[0].value === "" || 
+    document.getElementsByName("lname")[0].value === "" || 
+    document.getElementsByName("email")[0].value === "" || 
+    document.getElementsByName("phone")[0].value === "" || 
+    document.getElementsByName("course")[0].value === ""){
+        alert("Please Fill All Details First !")
+    }else{
 
         status.textContent = "Sending...";
 
